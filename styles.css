@@ -3,7 +3,9 @@ body {
 }
 
 .container {
+    position: relative;
     background-color: white;
     height: 200px;
     width: 200px;
+    outline: 2px solid limegreen;
 }
