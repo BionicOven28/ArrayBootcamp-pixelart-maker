@@ -10,15 +10,29 @@ body {
     width: 200px;
     outline: 2px solid #b14623;
     margin: 0 auto;
+    margin-top: 3%;
 }
 
 /* Styles for the user interface container */
 .user-interface {
   background-color: pink;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 200px;
   outline: 2px solid blue;
   float: bottom;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 3%;
+}
+
+.add-row-button {
+  float: bottom;
+  text-align: center;
+  background-color: green;
+  outline: 1px solid yellow; 
+}
+
+.add-column-button {
+  text-align: center;
+  background-color: blue;
+  outline: 1px solid yellow;
 }
