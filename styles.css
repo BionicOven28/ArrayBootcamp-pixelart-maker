@@ -1,11 +1,24 @@
+/* Page's main background color */
 body {
     background-color: #130912;
 }
 
+/* Styles for the grid container */
 .container {
-    position: relative;
     background-color: white;
     height: 200px;
     width: 200px;
     outline: 2px solid #b14623;
+    margin: 0 auto;
+}
+
+/* Styles for the user interface container */
+.user-interface {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+  outline: 2px solid blue;
+  float: bottom;
+  margin: 0 auto;
+  margin-top: 5%;
 }
