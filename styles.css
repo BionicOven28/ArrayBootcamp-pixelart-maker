@@ -1,38 +1,59 @@
 /* Page's main background color */
 body {
-    background-color: #130912;
+  background-color: #4e2f36;
+}
+
+/* Styles for the nav bar container */
+.nav-bar {
+background-color: #ee8441;
+outline: 3px double #1b1416;
+height: 35px;
+}
+
+/* Styles for the text within the nav bar */
+h1 {
+text-align: center;
+font-family: serif;
+}
+
+/* Styles for the grid container */
+.big-container {
+outline: 1px solid yellow;
+padding: 15px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-content: center;
 }
 
 /* Styles for the grid container */
 .container {
-    background-color: white;
-    height: 200px;
-    width: 200px;
-    outline: 2px solid #b14623;
-    margin: 0 auto;
-    margin-top: 3%;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  outline: 2px dashed #e2573b;
+  margin-right: 10%;
 }
 
 /* Styles for the user interface container */
 .user-interface {
-  background-color: pink;
-  height: 50px;
-  width: 200px;
-  outline: 2px solid blue;
-  float: bottom;
-  margin: 0 auto;
-  margin-top: 3%;
+background-color: pink;
+height: 250px;
+width: 100px;
+outline: 2px solid blue;
 }
 
+/* Button that adds rows to the grid */
 .add-row-button {
-  float: bottom;
-  text-align: center;
-  background-color: green;
-  outline: 1px solid yellow; 
+position: relative;
+text-align: center;
+background-color: green;
+outline: 1px solid yellow; 
 }
 
+/* Button that adds columns to the grid */
 .add-column-button {
-  text-align: center;
-  background-color: blue;
-  outline: 1px solid yellow;
+text-align: center;
+background-color: blue;
+outline: 1px solid yellow;
 }
