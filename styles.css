@@ -1,5 +1,6 @@
 /* Page's main background color */
 body {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba2f71c8-4b1a-4100-8e0d-b33068446e41/d97ma0i-60c2c3d3-4f28-4b48-b07d-4cc6cefcc513.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmEyZjcxYzgtNGIxYS00MTAwLThlMGQtYjMzMDY4NDQ2ZTQxXC9kOTdtYTBpLTYwYzJjM2QzLTRmMjgtNGI0OC1iMDdkLTRjYzZjZWZjYzUxMy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.gelwHW6lAK9hJAt2eXKjJTXdYdFL74VE0mcOSAWmjws');
   background-color: #4e2f36;
 }
 
@@ -7,18 +8,19 @@ body {
 .nav-bar {
 background-color: #ee8441;
 outline: 3px double #1b1416;
-height: 35px;
+height: 40px;
 }
 
 /* Styles for the text within the nav bar */
 h1 {
 text-align: center;
 font-family: serif;
+font-variant: small-caps;
+color: #291c1f;
 }
 
 /* Styles for the grid container */
 .big-container {
-outline: 1px solid yellow;
 padding: 15px;
 display: flex;
 flex-flow: row wrap;
@@ -27,33 +29,60 @@ align-content: center;
 }
 
 /* Styles for the grid container */
-.container {
-  background-color: white;
-  height: 300px;
-  width: 300px;
-  outline: 2px dashed #e2573b;
-  margin-right: 10%;
+.grid-container {
+ background-color: white;
+ height: 300px;
+ width: 300px;
+ outline: 3px double #e2573b;
+ margin-right: 10%;
 }
 
 /* Styles for the user interface container */
 .user-interface {
-background-color: pink;
+background-color: #e8aa5c;
 height: 250px;
 width: 100px;
-outline: 2px solid blue;
+outline: 3px double #e2573b;
 }
 
-/* Button that adds rows to the grid */
-.add-row-button {
-position: relative;
-text-align: center;
-background-color: green;
-outline: 1px solid yellow; 
+/* Styles for the button holder container */
+.button-holder {
+outline: 1px dotted green;
+display: flex;
+justify-content: center;
+align-content: center;
+padding: 3px;
 }
 
-/* Button that adds columns to the grid */
-.add-column-button {
+/* GENERAL styles for the button class */
+button {
+outline: 1px solid #1b1416;
+border: 0;
 text-align: center;
-background-color: blue;
-outline: 1px solid yellow;
+font-variant: small-caps;
+font-family: serif;
+color: #291c1f;
+}
+
+/* Add row button style */
+.add-row {
+background-color: #f2c592;
+margin-right: 3%;
+}
+
+/* Add column button style */
+.add-column {
+background-color: #e2573b;
+margin-right: 3%;
+}
+
+/* Undo button style */
+.undo {
+background-color: #e8aa5c;
+margin-right: 3%;
+}
+
+/* Save button style */   
+.save-project {
+background-color: #ee8441;
 }
