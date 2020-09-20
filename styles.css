@@ -1,88 +1,99 @@
 /* Page's main background color */
 body {
   background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba2f71c8-4b1a-4100-8e0d-b33068446e41/d97ma0i-60c2c3d3-4f28-4b48-b07d-4cc6cefcc513.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmEyZjcxYzgtNGIxYS00MTAwLThlMGQtYjMzMDY4NDQ2ZTQxXC9kOTdtYTBpLTYwYzJjM2QzLTRmMjgtNGI0OC1iMDdkLTRjYzZjZWZjYzUxMy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.gelwHW6lAK9hJAt2eXKjJTXdYdFL74VE0mcOSAWmjws');
-  background-color: #4e2f36;
 }
 
 /* Styles for the nav bar container */
 .nav-bar {
-background-color: #ee8441;
-outline: 3px double #1b1416;
-height: 40px;
+  background-color: #ee8441;
+  outline: 3px double #1b1416;
+  height: 40px;
 }
 
 /* Styles for the text within the nav bar */
 h1 {
-text-align: center;
-font-family: serif;
-font-variant: small-caps;
-color: #291c1f;
+  text-align: center;
+  font-family: serif;
+  font-variant: small-caps;
+  color: #291c1f;
 }
 
 /* Styles for the grid container */
 .big-container {
-padding: 15px;
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-align-content: center;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
 }
 
-/* Styles for the grid container */
+/* Styles for the grid container - relates to the grid-container query selector */
 .grid-container {
- background-color: white;
- height: 300px;
- width: 300px;
- outline: 3px double #e2573b;
- margin-right: 10%;
+  background-color: white;
+  height: 310px;
+  width: 310px;
+  outline: 3px double #e2573b;
+  margin-right: 10%;
+}
+
+/* Styles for the grid squares */
+.grid-square {
+  border: 1px black solid;
+  height: 10px;
+  width: 10px;
 }
 
 /* Styles for the user interface container */
 .user-interface {
-background-color: #e8aa5c;
-height: 250px;
-width: 100px;
-outline: 3px double #e2573b;
+  background-color: #e8aa5c;
+  height: 250px;
+  width: 100px;
+  outline: 3px double #e2573b;
+  text-align: center;
 }
 
 /* Styles for the button holder container */
 .button-holder {
-outline: 1px dotted green;
-display: flex;
-justify-content: center;
-align-content: center;
-padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3px;
 }
 
 /* GENERAL styles for the button class */
 button {
-outline: 1px solid #1b1416;
-border: 0;
-text-align: center;
-font-variant: small-caps;
-font-family: serif;
-color: #291c1f;
+  outline: 1px solid #1b1416;
+  border: 0;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: serif;
+  color: #291c1f;
 }
 
 /* Add row button style */
 .add-row {
-background-color: #f2c592;
-margin-right: 3%;
+  background-color: #f2c592;
+  margin-right: 3%;
 }
 
 /* Add column button style */
 .add-column {
-background-color: #e2573b;
-margin-right: 3%;
+  background-color: #e2573b;
+  margin-right: 3%;
 }
 
 /* Undo button style */
-.undo {
-background-color: #e8aa5c;
-margin-right: 3%;
+.undo { /* Undo last action not clear */
+  background-color: #e8aa5c;
+  margin-right: 3%;
+}
+
+.clear {
+  background-color: #e2573b;
+  margin-right: 3%;
 }
 
 /* Save button style */   
 .save-project {
-background-color: #ee8441;
+  background-color: #f2c592;
 }
