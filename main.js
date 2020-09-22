@@ -1,16 +1,17 @@
-// Grid stuff
-let divTag = document.createElement('div');
+// Base Grid stuff
 let container = document.querySelector('.grid-container');
 
-for (let r = 1; r < 8; r++) { // r=rows
-		let row = document.createElement('div'); // creates the row
-    row.classList.add('row');
- 		container.appendChild(row);
-    console.log(`The rows work correctly.`);
-    	for (let c = 0; c < 8; c++) { // c=columns
-      	let cell = document.createElement('div'); // creates the cell
-        cell.classList.add('grid-square');
-        row.appendChild(cell);
-        console.log(`The cells work correctly.`);
+for (let r = 0; r < 10; r++) { // r=rows
+		let row = document.createElement('div');
+    row.className = "grid-row"; 
+    	for (let c = 0; c < 10; c++) { // c=columns
+      	let columns = document.createElement('div');
+        columns.className = "cell"; 
+        row.appendChild(columns);
       }
+      container.appendChild(row);
 }
+
+// Grid changing colors stuff
+
+// Color palette stuff
