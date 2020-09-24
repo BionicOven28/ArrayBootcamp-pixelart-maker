@@ -30,7 +30,8 @@ h1 {
 /* Styles for the grid container */
 .grid-container {
   background-color: white;
-  height: auto;
+  outline: 3px double #e2573b;
+  height: ;
   width: auto;
   margin-right: 5%;
 }
@@ -43,7 +44,7 @@ h1 {
 
 .cell {
   background-color: white;
-  outline: 0.5px solid black;
+  outline: 0.1px solid #eee;
   height: 10px;
   width: 10px;
   display: inline-block;
@@ -136,6 +137,10 @@ button {
   background-color: #e2573b;
   margin-right: 3%;
 }
+
+  .clear:hover {
+    background
+  }
 
 /* Save button style */
 .save-project {
