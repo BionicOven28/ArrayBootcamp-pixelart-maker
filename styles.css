@@ -31,7 +31,7 @@ h1 {
 .grid-container {
   background-color: white;
   outline: 3px double #e2573b;
-  height: ;
+  height: auto;
   width: auto;
   margin-right: 5%;
 }
@@ -99,6 +99,16 @@ button {
   color: #291c1f;
 }
 
+  button:hover {
+    background-color: #1b1416;
+    color: white;
+    outline: 1px solid white;
+  }
+  
+  button:active {
+    background-color: #73de49;
+  }
+
 /* user input row style */
 .row-input {
   color: white;
@@ -118,7 +128,7 @@ button {
   border: 0;
   outline: 1px solid black;
   width: 50px;
-  margin-right: 3%
+  margin-right: 3%;
 }
 
 .input-enter {
@@ -137,10 +147,6 @@ button {
   background-color: #e2573b;
   margin-right: 3%;
 }
-
-  .clear:hover {
-    background
-  }
 
 /* Save button style */
 .save-project {
