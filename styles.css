@@ -20,11 +20,11 @@ h1 {
 
 /* Styles for the grid container */
 .big-container {
-  margin: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+  margin: 10px;
 }
 
 /* Styles for the grid container */
@@ -51,13 +51,28 @@ h1 {
 
 /* Styles for the user interface container */
 .color-palette {
-  background-color: #e8aa5c;
-  height: auto;
+  height: 300px;
   width: 100px;
-  outline: 3px double #e2573b;
-  text-align: center;
   display: grid;
   grid-template-columns: auto auto;
+  background-color: #e8aa5c;
+  outline: 3px double #e2573b;
+  text-align: center;
+  margin-right: 3%;
+}
+
+.color-box {
+  display: grid;
+  outline: 3px double #e2573b;
+  background: white;
+  height: 60px;
+  text-align: center;
+}
+
+.current-color-display {
+  outline: 1px solid black;
+  height: 30px;
+  width: 30px;
 }
 
 /* Styles for the color palette buttons */
@@ -105,6 +120,11 @@ button {
   margin-right: 3%
 }
 
+.input-enter {
+  background-color: #f2c592;
+  margin-right: 3%;
+}
+
 /* Undo button style */
 .undo {
   background-color: #e8aa5c;
@@ -132,4 +152,9 @@ button {
 /* upload img style */
 .upload {
   background-color: #e2573b;
+}
+
+.grid-size-info {
+  text-align: center;
+  color: white;
 }

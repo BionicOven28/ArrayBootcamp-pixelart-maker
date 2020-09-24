@@ -10,23 +10,32 @@
       <div class="big-container">
         <div class="grid-container"></div>
         <div class="color-palette">
-          <button class="cp-btn-a">a</button>
-          <button class="cp-btn-b">b</button>
-          <button class="cp-btn-c">c</button>
-          <button class="cp-btn-d">d</button>
-          <button class="cp-btn-e">e</button>
-          <button class="cp-btn-f">f</button>
-          <button class="cp-btn-g">g</button>
-          <button class="cp-btn-h">h</button>
-          <button class="cp-btn-i">i</button>
-          <button class="cp-btn-j">j</button>
+          <button class="cp-btn" class="cp-btn-a">a</button>
+          <button class="cp-btn" class="cp-btn-b">b</button>
+          <button class="cp-btn" class="cp-btn-c">c</button>
+          <button class="cp-btn" class="cp-btn-d">d</button>
+          <button class="cp-btn" class="cp-btn-e">e</button>
+          <button class="cp-btn" class="cp-btn-f">f</button>
+          <button class="cp-btn" class="cp-btn-g">g</button>
+          <button class="cp-btn" class="cp-btn-h">h</button>
+          <button class="cp-btn" class="cp-btn-i">i</button>
+          <button class="cp-btn" class="cp-btn-j">j</button>
+          <button class="cp-btn" class="cp-btn-k">k</button>
+          <button class="cp-btn" class="cp-btn-l">l</button>
+        </div>
+        <div class="color-box">
+          <div class="current-color">
+            Current Color
+            <div class="current-color-display"></div>
+          </div>
         </div>
       </div>
       <div class="button-holder">
-        <div class="row-input">row</div>
-        <input type="number" class="number-input">
+        <div class="row-input" id="row-input">row</div>
+        <input type="number" class="number-input rvalue" value="30">
         <div class="column-input">column</div>
-        <input type="number" class="number-input">
+        <input type="number" class="number-input cvalue" value="30">
+        <button class="input-enter">enter</button>
         <button class="undo">undo</button>
         <button class="clear">clear</button>
         <button class="save-project">save</button>
