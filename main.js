@@ -55,19 +55,6 @@
     }
   }
 
-  // to return one value of an array  arrayClassArr.indexOf('name') inside brackets
-  // arrayClassArr.forEach(function(name))
-
-
-  // mousedown mouseup mouseleave mouseover onclick
-  // click event on the palette
-  // click = select color
-
-
-  // UNDO BUTTON
-  //let undoBtn = document.querySelector('.undo');
-
-
   // CLEAR BUTTON
   let clearBtn = document.querySelector('.clear');
 
