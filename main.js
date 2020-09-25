@@ -2,18 +2,25 @@
   // BASE AND RE-SIZE GRID VIA USER INPUT
   let container = document.querySelector('.grid-container');
 
-  function createGrid() {
+  function createGrid(colorArray) {
     container.innerHTML = '';
+    let columnsIndex = 0;
     for (let r = 0; r < document.querySelector('.rvalue').value; r++) { // r=rows // HEIGHT
       let row = document.createElement('div');
       row.className = "grid-row";
       for (let c = 0; c < document.querySelector('.cvalue').value; c++) { // c=columns // WIDTH
         let columns = document.createElement('div');
         columns.className = "cell";
+        if (colorArray) {
+          let saveBackgroundColor = colorArray[columnsIndex];
+          columns.style.background = saveBackgroundColor;
+        }
         row.appendChild(columns);
+        columnsIndex++;
       }
       container.appendChild(row);
     }
+    console.log(`Grid created`);
     addEventListenersToGrid();
   }
   let entBtn = document.querySelector('.input-enter');
@@ -71,10 +78,7 @@
 
   // SAVE & LOAD BUTTON
 	function initializeButtonEvents() {
-  	let saveButton = 
-    
-    
-    document.querySelector('.save-project');
+  	let saveButton = document.querySelector('.save-project');
   	let loadButton = document.querySelector('.load-project');
   
   saveButton.addEventListener('click', (event) => {
@@ -84,6 +88,7 @@
     allCells.forEach(function(domElement, index) {
       storedCellsArr.push(domElement.style.backgroundColor);
     });
+    console.log('Artwork saved');
     
     localStorage.setItem('lastSavedDesign', JSON.stringify(storedCellsArr));
 	});
@@ -94,31 +99,20 @@
     allCells.forEach((domElement) => {
     	domElement.remove();
   });
+  console.log('Artwork loaded');
   
   	let savedDesignSquares = JSON.parse(localStorage.getItem('lastSavedDesign'));
     
     createGrid(savedDesignSquares);
    });
   }
-  
-  // UPLOAD AN IMG STUFF
-  //let imageBox = document.querySelector('.grid-container');
-  // fetch('https://picsum.photos/300/300', {
-  //method: 'GET',
-  //headers: {
-  //'Accept': 'application/json'
-  //}
-  //})
-  //.then ( function(response) {
-  //let imgElement = document.createElement('img');
-  //imgElement.src = response.url;
-  //imageBox.appendChild(imgElement);
-  //}
-  //)
 
   function startup() {
     createGrid()
     createPalette()
+    initializeButtonEvents()
+    addEventListenersToGrid()
+    clearSquaresColors()
   }
 
   startup() // everything you want to load at the start of the page
