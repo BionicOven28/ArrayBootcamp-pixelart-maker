@@ -25,6 +25,7 @@
   let colors = ['#130912', '#1d1c1f', '#3e1c33', '#43394f', '#602749', '#3b6b4f', '#b14623', '#62a348', '#f6921d', '#73de49'];
 
   function createPalette() {
+  let colorIndicator = document.querySelector('.current-color-display');
     for (let i = 0; i < colors.length; i++) { // j
       let cpBtn = document.createElement('button');
       let currentColor = colors[i];
@@ -36,6 +37,7 @@
 
       cpBtn.addEventListener('click', function(event) {
         selectedColor = cpBtn.style.backgroundColor;
+        colorIndicator.style.background = selectedColor
         console.log(selectedColor);
       });
     }
@@ -48,7 +50,7 @@
       let cell = allCells[p];
 
       cell.addEventListener('click', function() {
-        cell.style.background = 'black';
+        cell.style.background = selectedColor;
       });
     }
   }
@@ -60,17 +62,6 @@
   // mousedown mouseup mouseleave mouseover onclick
   // click event on the palette
   // click = select color
-
-
-
-  //// BOTTOM ROW OF BUTTONS WIRE UP ////
-  // ROW & COLUMN ENTER VALUES BUTTON
-  //let enterBtn = document.querySelector('.input-enter');
-
-  //function userInputEnter() {
-  //let userInputApply = document.querySelector('.')
-  //}
-
 
 
   // UNDO BUTTON
