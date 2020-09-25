@@ -192,18 +192,3 @@ text {
    .load-project:active {
     background-color: #73de49;
   }
-
-/* upload img style */
-.upload {
-  background-color: #e2573b;
-}
-
-  .upload:hover {
-    background-color: #1b1416;
-    color: white;
-    outline: 1px solid white;
-  }
-  
-   .upload:active {
-    background-color: #73de49;
-  }
