@@ -1,4 +1,4 @@
-(function() {
+//(function() {
   // BASE AND RE-SIZE GRID VIA USER INPUT
   let container = document.querySelector('.grid-container');
 
@@ -69,8 +69,38 @@
 
   clearBtn.addEventListener('click', clearSquaresColors);
 
-  // SAVE BUTTON
-  // LOAD BUTTON
+  // SAVE & LOAD BUTTON
+	function initializeButtonEvents() {
+  	let saveButton = 
+    
+    
+    document.querySelector('.save-project');
+  	let loadButton = document.querySelector('.load-project');
+  
+  saveButton.addEventListener('click', (event) => {
+    let allCells = document.querySelectorAll('.cell');
+    let storedCellsArr = [];
+    
+    allCells.forEach(function(domElement, index) {
+      storedCellsArr.push(domElement.style.backgroundColor);
+    });
+    
+    localStorage.setItem('lastSavedDesign', JSON.stringify(storedCellsArr));
+	});
+  
+  loadButton.addEventListener('click', (event) => {
+  	let allCells = document.querySelectorAll('.cell');
+    
+    allCells.forEach((domElement) => {
+    	domElement.remove();
+  });
+  
+  	let savedDesignSquares = JSON.parse(localStorage.getItem('lastSavedDesign'));
+    
+    createGrid(savedDesignSquares);
+   });
+  }
+  
   // UPLOAD AN IMG STUFF
   //let imageBox = document.querySelector('.grid-container');
   // fetch('https://picsum.photos/300/300', {
@@ -93,4 +123,4 @@
 
   startup() // everything you want to load at the start of the page
 
-})();
+//})();
