@@ -1,4 +1,4 @@
-# Pixel Art Maker (PAM)
+# Pixel Art Maker (PAM) (2020)
 In the conclusion of the first sprint of Array's bootcamp, you will create a pixel art maker program that allows the user to design pixel art in a small grid on the website. They can choose colors from a palette, and then design art in an interface of **your** choosing!
 
 By completion of the project, the users should be able to:
