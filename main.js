@@ -33,7 +33,7 @@
 
   function createPalette() {
   let colorIndicator = document.querySelector('.current-color-display');
-    for (let i = 0; i < colors.length; i++) { // j
+    for (let i = 0; i < colors.length; i++) { // i
       let cpBtn = document.createElement('button');
       let currentColor = colors[i];
       cpBtn.classList.add(`cp-btn`);
